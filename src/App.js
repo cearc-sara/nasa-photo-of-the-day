@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Header from "./Components/header"
-import Footer from "./Components/footer"
-import Images from "./Photos/images"
-import Text from "./Text/text"
+import Body from "./body/Body"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 
 import "./App.css";
 
@@ -14,13 +14,11 @@ function App() {
 
 
 
-  
   return (
     <div className="App">
       <Header />
       <Footer />
-      <Images />
-      <Text />
+      <Body />
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
