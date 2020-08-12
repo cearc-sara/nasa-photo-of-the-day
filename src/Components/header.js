@@ -8,7 +8,8 @@ export default function Header(props) {
 
     return (
         <div className = 'header'>
-            <h1>{title}</h1>
+            <h1>NASA Photo of the Day</h1>
+            <h2>{title}</h2>
                 <h3>{date}</h3>
         </div>
     )
