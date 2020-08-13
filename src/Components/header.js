@@ -22,14 +22,14 @@ h3{
 
 
 export default function Header(props) {
-    const {title, date} = props
+    const {imageInfo} = props
 
 
     return (
         <StyledHeader className = 'header'>
             <h1>NASA Photo of the Day</h1>
-                <h2>{title}</h2>
-                    <h3>{date}</h3>
+                <h2>{imageInfo.title}</h2>
+                    <h3>{imageInfo.date}</h3>
         </StyledHeader>
     )
 }

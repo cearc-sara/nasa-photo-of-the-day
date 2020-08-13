@@ -21,17 +21,20 @@ p{
     font-size:${props => props.theme.fontSize};
     color:${props => props.theme.secondaryColor};
 }
+@media(max-width:1090px){
+
+}
 `
 
 
 export default function Body(props) {
-    const {image, text} = props
+    const {image} = props
 
 
     return (
         <StyledBody className = 'body'>
-            <img src={image} alt=''/>
-                <p>{text}</p>
+            <img src={image.url} alt=''/>
+                <p>{image.explanation}</p>
                 
         </StyledBody>
     )

@@ -9,12 +9,12 @@ border:10px dotted ${props => props.theme.tertiaryColor};
 `
 
 export default function Footer(props) {
-    const {copyright} = props
+    const {imageInfo} = props
 
 
     return (
         <StyledFooter className = 'footer'>
-            <h4>Credit: {copyright}</h4>
+            <h4>Credit: {imageInfo.copyright}</h4>
         </StyledFooter>
     )
 }
