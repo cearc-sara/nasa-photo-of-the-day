@@ -22,7 +22,22 @@ p{
     color:${props => props.theme.secondaryColor};
 }
 @media(max-width:1090px){
-
+img{
+    width:45%;
+}
+p{
+    width:40%;
+}
+}
+@media(max-width:900px){
+    display:flex;
+    flex-direction:column;
+    img{
+    width:93%;
+}
+p{
+    width:90%;
+}  
 }
 `
 
