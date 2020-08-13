@@ -3,6 +3,7 @@ import axios from "axios";
 import {BASE_URL, API_KEY} from "./constants/index"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Body from "./components/Body"
 
 
 import "./App.css";
@@ -71,8 +72,7 @@ function App() {
     <div className="App">
       <Header title={title} date={date}/>
 
-      <img src={imageOfDay} alt=''/>
-      <p>{explination}</p>
+     <Body image={imageOfDay} text={explination}/>
       
       <Footer copyright={copyright}/>
       
